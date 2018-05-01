@@ -11,11 +11,11 @@ app = Flask(__name__)
 
 @app.route('/', methods=['GET'])
 def home_page():
-	return render_template('freelancer.css')
+	return render_template('index.html')
 
 @app.route('/<name>')
 def profile(name):
-	return render_template('freelancer.css', name=name)
+	return render_template('index.html', name=name)
 
 
 
